@@ -46,8 +46,9 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text("countdown to death"),
       ),
-      body: Container(
-        color: Colors.black,
+      body: Center(
+        child: ElevatedButton(onPressed: () {  },
+        child: Text('button'),),
       ),
     );
   }
