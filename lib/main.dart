@@ -42,11 +42,11 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ボタンを押せ"),
+        title: Text("ボタンを押すだけ"),
       ),
       body: Center(
         child: ElevatedButton(onPressed: () {  },
-        child: Text('ボタンを押せ'),),
+        child: Text('ボタンを押すだけ'),),
       ),
     );
   }
