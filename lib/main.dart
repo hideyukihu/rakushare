@@ -33,6 +33,9 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
+  int _currentIndex = 0;
+
+
   void _incrementCounter() {
     setState(() {
     });
@@ -42,12 +45,24 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ボタンを押すだけ"),
+        title: const Text("ボタンを押すだけ"),
       ),
       body: Center(
         child: ElevatedButton(onPressed: () {  },
-        child: Text('ボタンを押すだけ'),),
+        child: const Text('ボタンを押すだけ'),),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.photo_album), label:'Album'),
+          BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'Chat'),
+        ],
+        currentIndex: _currentIndex,
+        fixedColor: Colors.blueAccent,
+        onTap: _onItemTapped,
+        type: BottomNavigationBarType.fixed,
       ),
     );
   }
+  void _onItemTapped(int index) => setState(() => _currentIndex = index );
 }
