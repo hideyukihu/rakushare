@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'sub.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -48,7 +50,9 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("ボタンを押すだけ"),
       ),
       body: Center(
-        child: ElevatedButton(onPressed: () {  },
+        child: ElevatedButton(onPressed: () {  
+          Navigator.push(context, MaterialPageRoute(builder: (context) => Sub()));
+        },
         child: const Text('ボタンを押すだけ'),),
       ),
       bottomNavigationBar: BottomNavigationBar(
