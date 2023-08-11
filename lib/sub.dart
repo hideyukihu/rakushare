@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Sub extends StatelessWidget {
+  Sub(this.name);
+  final String name;
 
 @override
 Widget build(BuildContext context) {
@@ -10,8 +12,11 @@ Widget build(BuildContext context) {
       title: const Text("ボタンを押す"),
     ),
     body: Center(
-      child: ElevatedButton(onPressed: () {  },
-        child: const Text('ボタンを押す'),),
+      child: Column(
+        children: [
+          Text(name),
+        ],
+      ),
     ),
     bottomNavigationBar: BottomNavigationBar(
       items: const <BottomNavigationBarItem>[

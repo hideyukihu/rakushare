@@ -25,8 +25,6 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
-
-
   final String title;
 
   @override
@@ -34,15 +32,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-  int _currentIndex = 0;
-
-
-  void _incrementCounter() {
-    setState(() {
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: ElevatedButton(onPressed: () {  
-          Navigator.push(context, MaterialPageRoute(builder: (context) => Sub()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => Sub('hideyukihu')));
         },
         child: const Text('ボタンを押すだけ'),),
       ),
@@ -61,12 +50,9 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(icon: Icon(Icons.photo_album), label:'Album'),
           BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'Chat'),
         ],
-        currentIndex: _currentIndex,
         fixedColor: Colors.blueAccent,
-        onTap: _onItemTapped,
         type: BottomNavigationBarType.fixed,
       ),
     );
   }
-  void _onItemTapped(int index) => setState(() => _currentIndex = index );
 }
