@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "561658411403",
+    "project_id": "rakushare-bc7c8",
+    "storage_bucket": "rakushare-bc7c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561658411403:android:3c16d9e1e77e4c2f48178e",
+        "android_client_info": {
+          "package_name": "net.rakushare.rakushare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561658411403-rkbgu2nt6qmea8pvpij77j9nh3223kvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9KGLp2_2LaI0kE9WWCXcVwV0AkNr2Imc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561658411403-rkbgu2nt6qmea8pvpij77j9nh3223kvu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "561658411403-4h6erhmapam8890n87c6k7tmaj31qn54.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.rakushare.rakushare"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
